@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+		}
+
+		.container {
+			position: relative;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.circulo {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+			animation: quicarCirculo 2s linear 4;
+		}
+
+		@keyframes quicarCirculo {
+			0% {
+				left: 0;
+				transform: translateY(0);
+			}
+
+			20% {
+				top: 0;
+				transform: translateY(0);
+			}
+
+			40% {
+				left: 100%;
+				transform: translateY(100px);
+			}
+
+			60% {
+				top: 100%;
+				transform: translateY(0);
+			}
+
+			80% {
+				left: 0;
+				transform: translateY(-100px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="circulo"></div>
+	</div>
+</body>
+
+</html>

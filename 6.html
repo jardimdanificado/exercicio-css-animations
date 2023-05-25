@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .quadrado {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: girarQuadrado 12s infinite linear;
+    }
+
+    @keyframes girarQuadrado {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        background-color: red;
+      }
+      12.5% {
+        background-color: green;
+      }
+      25% {
+        background-color: blue;
+      }
+      37.5% {
+        background-color: yellow;
+      }
+      50% {
+        background-color: orange;
+      }
+      62.5% {
+        background-color: purple;
+      }
+      75% {
+        background-color: pink;
+      }
+      87.5% {
+        background-color: cyan;
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="quadrado"></div>
+</body>
+</html>

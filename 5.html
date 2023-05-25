@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+		}
+
+		.quadrado {
+			width: 200px;
+			height: 200px;
+			background-color: #ff0000;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: transform 3s;
+			animation: girarQuadrado 3s infinite;
+		}
+
+		@keyframes girarQuadrado {
+			0% {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+
+			100% {
+				transform: translate(-50%, -50%) rotate(45deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="quadrado"></div>
+</body>
+
+</html>

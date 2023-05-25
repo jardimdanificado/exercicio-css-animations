@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .quadrado {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+      animation: moverQuadrado 4s infinite ease-in-out;
+    }
+
+    .quadrado:nth-child(2) {
+      animation-delay: 2s;
+    }
+
+    .quadrado:nth-child(3) {
+      animation-delay: 4s;
+    }
+
+    @keyframes moverQuadrado {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-100px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+  </div>
+</body>
+</html>
